@@ -16,8 +16,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jump.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JumpBox.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement.cs" />
       </list>
     </option>
   </component>
@@ -62,7 +62,7 @@
       <updated>1616053586738</updated>
       <workItem from="1616053593396" duration="1210000" />
       <workItem from="1616054811684" duration="10812000" />
-      <workItem from="1616115265304" duration="16442000" />
+      <workItem from="1616115265304" duration="17760000" />
     </task>
     <servers />
   </component>
