@@ -37,7 +37,7 @@ public class Collision : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         onGround = Physics2D.OverlapCircle((Vector2) transform.position + Vector2.down * (playerSize.y * downBoxPosition), collisionRadius, layerMask);
         onWall = Physics2D.OverlapCircle((Vector2) transform.position + Vector2.left * (playerSize.x * leftBoxPosition),
