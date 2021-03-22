@@ -11,12 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06597f45-9dd5-42d1-999b-07e6cd29242a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.2DDemo/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2DDemo/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DDemo/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Player/player_wallJump.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Player/player_wallJump.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2DDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetterJump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetterJump.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BetterJump.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collision.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -36,16 +36,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jump.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JumpBox.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BetterJump.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1pvBFtqVxxnoS3LgS5UzzoUv90W" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -86,7 +91,7 @@
       <workItem from="1616115265304" duration="17787000" />
       <workItem from="1616250772651" duration="2817000" />
       <workItem from="1616317757257" duration="7133000" />
-      <workItem from="1616390280082" duration="1188000" />
+      <workItem from="1616390280082" duration="7922000" />
     </task>
     <servers />
   </component>
@@ -108,12 +113,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="687" y="243" key="search.everywhere.popup" timestamp="1616053630760">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state x="644" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1616392223663">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="243" key="search.everywhere.popup/-1920.0.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1616053630760" />
+    <state x="644" y="227" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1616392223663" />
   </component>
 </project>
