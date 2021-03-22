@@ -24,6 +24,7 @@ public class Movement : MonoBehaviour
     public float slideSpeed = 5;
     public float wallJumpLerp = 10;
     public float dashSpeed = 20;
+    public Vector2 velocity;
 
     [Space]
     [Header("Booleans")]
@@ -57,6 +58,7 @@ public class Movement : MonoBehaviour
         xRaw = Input.GetAxisRaw("Horizontal");
         yRaw = Input.GetAxisRaw("Vertical");
         direction=new Vector2(x,y);
+        velocity = _rigidbody2D.velocity;
         //落地重置冲刺次数
         if (_collision.onGround && !isDashing)
         {
@@ -122,6 +124,11 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_collision.onGround)
+        {
+            _animator.SetBool("grounded",true);
+        }
+        Run(direction);
         if (jump)
         {
             Jump(Vector2.up);
@@ -130,6 +137,11 @@ public class Movement : MonoBehaviour
         if (dash)
         {
             Dash(xRaw,yRaw);
+        }
+
+        if (wallSlide)
+        {
+            WallSilde();
         }
     }
 
@@ -195,5 +207,21 @@ public class Movement : MonoBehaviour
         canMove = false;
         yield return new WaitForSeconds(time);
         canMove = true;
+    }
+
+    void WallSilde()
+    {
+        if(_collision.wallSide != side)
+            _collision.transform.eulerAngles=new Vector3(0,180f,0f);
+
+        if (!canMove)
+            return;
+
+        var velocity = _rigidbody2D.velocity;
+        bool pushingWall = (velocity.x > 0 && _collision.onRightWall) || (velocity.x < 0 && _collision.onLeftWall);
+        float push = pushingWall ? 0 : velocity.x;
+
+        velocity = new Vector2(push, -slideSpeed);
+        _rigidbody2D.velocity = velocity;
     }
 }

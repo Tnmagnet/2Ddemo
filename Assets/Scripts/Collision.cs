@@ -28,7 +28,7 @@ public class Collision : MonoBehaviour
     
     public float collisionRadius = 0.25f;
 
-    public float downBoxPosition, leftBoxPosition, rightBoxPosition;
+    public float downBoxPosition=0.5f, leftBoxPosition=0.5f, rightBoxPosition=0.5f;
     // Start is called before the first frame update
     void Start()
     {

@@ -1616,6 +1616,9 @@ GameObject:
   - component: {fileID: 1447243726}
   - component: {fileID: 1447243729}
   - component: {fileID: 1447243732}
+  - component: {fileID: 1447243731}
+  - component: {fileID: 1447243730}
+  - component: {fileID: 1447243725}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1623,6 +1626,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1447243725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447243724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923c906204bf9eb4ba1f0e608e96ddd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidbody2D: {fileID: 0}
+  x: 0
+  y: 0
+  xRaw: 0
+  yRaw: 0
+  speed: 10
+  jumpForce: 50
+  slideSpeed: 5
+  wallJumpLerp: 10
+  dashSpeed: 20
+  canMove: 0
+  wallGrab: 0
+  wallJumped: 0
+  wallSlide: 0
+  isDashing: 0
+  side: 1
 --- !u!50 &1447243726
 Rigidbody2D:
   serializedVersion: 4
@@ -1728,6 +1759,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1447243730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447243724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b043836b2caf446a97ad5ee96e9a8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 768
+  onGround: 0
+  onWall: 0
+  onLeftWall: 0
+  onRightWall: 0
+  wallSide: 0
+  collisionRadius: 0.25
+  downBoxPosition: 0.7
+  leftBoxPosition: 0.7
+  rightBoxPosition: 0.7
+--- !u!114 &1447243731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447243724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0b90d278ac5bb42b5052ea187ee7f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!70 &1447243732
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
